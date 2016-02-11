@@ -7,3 +7,8 @@ function _pp(el,dest) {_q(''+dest+'').insertBefore(el,_q(''+dest+'').firstChild)
 function _i(el,str) {el.innerHTML=str;}
 function _e(el) {el.innerHTML='';}
 function escapeHtml(s) { s=s.replace(/&/g,'&amp;'); s=s.replace(/</g,'&lt;'); s=s.replace(/>/g,'&gt;'); s=s.replace(/"/g,'&quot;'); s=s.replace(/'/g,'&#39;'); return s}
+
+var js = new function() {
+	this.q = function(el) {return document.querySelector(el);}
+	this.cr = function(el) {return document.createElement(''+el+'');}
+}
