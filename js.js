@@ -2,6 +2,7 @@ function _(el) {return document.getElementById(el);}
 function _q(el) {return document.querySelector(el);}
 function _a(el) {return document.querySelectorAll(el);}
 function _cr(el) {return document.createElement(''+el+'');}
+function _rm(el) {el.parentNode.removeChild(el);}
 function _ap(el,dest) {_q(''+dest+'').appendChild(el);}
 function _pp(el,dest) {_q(''+dest+'').insertBefore(el,_q(''+dest+'').firstChild);}
 function _i(el,str) {el.innerHTML=str;}
