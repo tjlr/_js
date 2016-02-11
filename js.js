@@ -12,3 +12,6 @@ var js = new function() {
 	this.q = function(el) {return document.querySelector(el);}
 	this.cr = function(el) {return document.createElement(''+el+'');}
 }
+
+//example
+js.cr('div');
